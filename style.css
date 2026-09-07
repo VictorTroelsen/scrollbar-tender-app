@@ -1,7 +1,7 @@
 :root {
   --bg: #121212;
   --bg-card: #1c1c1c;
-  --accent: #e2ff3d;
+  --accent: #d7ce00;
   --text: #f5f5f5;
   --text-dim: #a8a8a8;
   --border: #2c2c2c;
@@ -35,9 +35,8 @@ h1, h2, .topbar-logo {
 }
 
 .topbar-logo {
-  font-size: 1.1rem;
-  color: var(--accent);
-  letter-spacing: 1px;
+  height: 40px;
+  width: auto;
 }
 
 .topbar-tag {
