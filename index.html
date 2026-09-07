@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Victor for ScrollBar Tender</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-logo">SCROLL<br>BAR</div>
+  <div class="topbar-tag">TENDER APPLICATION</div>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="kicker">ITU · SCROLLBAR · FRIDAY BAR</p>
+    <h1>VICTOR FOR<br><span class="accent">SCROLLBAR TENDER</span></h1>
+    <p class="subhead">A completely unbiased, 100% not-rigged application to pour your drinks, hype your Fridays, and occasionally find the bug in your code <em>and</em> the bug in your drink.</p>
+  </section>
+
+  <section class="stats">
+    <h2>Why hire me</h2>
+    <div class="stat-grid">
+      <div class="stat-card">
+        <span class="stat-emoji">🍺</span>
+        <span class="stat-value">10,000+</span>
+        <span class="stat-label">Beers poured (simulated)</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-emoji">📅</span>
+        <span class="stat-value">100%</span>
+        <span class="stat-label">Friday availability</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-emoji">🐛</span>
+        <span class="stat-value">51 / 49</span>
+        <span class="stat-label">Bugs fixed vs. bugs caused (I round up)</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-emoji">🎧</span>
+        <span class="stat-value">Selectively</span>
+        <span class="stat-label">AUX cord requests honored</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="gifs">
+    <div class="gif-slot">
+      <div class="gif-anim gif-anim--run">🏃</div>
+      <p class="gif-caption">me, sprinting to open on time</p>
+    </div>
+    <div class="gif-slot">
+      <div class="gif-anim gif-anim--pour">🍻</div>
+      <p class="gif-caption">me, mid-pour, zero spills (allegedly)</p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>So, ScrollBar &mdash; will you accept this application?</h2>
+    <div class="cta-buttons" id="cta-buttons">
+      <button class="btn btn-accept" id="accept-btn">ACCEPT</button>
+      <button class="btn btn-decline" id="decline-btn">DECLINE</button>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    Built with chaotic energy for ScrollBar @ ITU &middot; 2026
+  </footer>
+</main>
+
+<div class="overlay hidden" id="escalation-modal">
+  <div class="modal-box">
+    <p class="modal-text">Wait, are you sure?</p>
+    <div class="modal-buttons">
+      <button class="btn btn-outline btn-no">No</button>
+      <button class="btn btn-outline btn-yes">Yes</button>
+    </div>
+  </div>
+</div>
+
+<div class="overlay hidden" id="celebration-overlay">
+  <div class="modal-box celebration-box">
+    <p class="celebration-emoji">🎉</p>
+    <p class="modal-text">COMMIT MERGED.<br>See you behind the bar, Friday 3PM&ndash;2AM.</p>
+    <a class="btn btn-accept" href="mailto:victor.troelsen@gmail.com?subject=ScrollBar%20Tender%20Application">Email Victor &rarr;</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
