@@ -53,7 +53,7 @@ window.addEventListener('mousemove', (e) => {
 const escalationSteps = [
   { text: 'Wait, are you sure you want to decline?', yes: 'Yes', no: 'No' },
   { text: 'Are you REALLY sure?? Think about the beer.', yes: 'Yes, really', no: 'No, wait' },
-  { text: "Final answer?? There's no ctrl+z on this one.", yes: "I'm sure", no: 'Nevermind' },
+  { text: "Final answer?? No regrets i guess ;(", yes: "I'm sure", no: 'Nevermind' },
 ];
 let escalationStep = 0;
 
