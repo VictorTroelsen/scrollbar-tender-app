@@ -3,6 +3,10 @@ const acceptBtn = document.getElementById('accept-btn');
 const ctaButtons = document.getElementById('cta-buttons');
 const escalationModal = document.getElementById('escalation-modal');
 const celebrationOverlay = document.getElementById('celebration-overlay');
+const celebrationClose = document.getElementById('celebration-close');
+const prosconsTab = document.getElementById('proscons-tab');
+const prosconsPanel = document.getElementById('proscons-panel');
+const prosconsClose = document.getElementById('proscons-close');
 
 const FLEE_THRESHOLD = 160;
 const PADDING = 16;
@@ -105,3 +109,24 @@ escalationModal.querySelector('.btn-yes').addEventListener('click', handleEscala
 escalationModal.querySelector('.btn-no').addEventListener('click', handleEscalationResponse);
 
 acceptBtn.addEventListener('click', showCelebration);
+
+celebrationClose.addEventListener('click', () => {
+  celebrationOverlay.classList.add('hidden');
+});
+
+prosconsTab.addEventListener('click', () => {
+  const isOpen = prosconsPanel.classList.toggle('open');
+  prosconsTab.setAttribute('aria-expanded', isOpen);
+});
+
+prosconsClose.addEventListener('click', () => {
+  prosconsPanel.classList.remove('open');
+  prosconsTab.setAttribute('aria-expanded', 'false');
+});
+
+document.addEventListener('click', (e) => {
+  if (!prosconsPanel.classList.contains('open')) return;
+  if (prosconsPanel.contains(e.target) || prosconsTab.contains(e.target)) return;
+  prosconsPanel.classList.remove('open');
+  prosconsTab.setAttribute('aria-expanded', 'false');
+});

@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=25">
+<link rel="stylesheet" href="style.css?v=40">
 </head>
 <body>
 
@@ -98,15 +98,17 @@
 
   <section class="backstory">
     <div class="backstory-box">
-      <p class="backstory-label">The backstory</p>
-      <p class="backstory-text">5th-semester Software Development student at ITU, originally from Nyk&oslash;bing Falster. Took a proper gap-years detour before uni: several seasons as a <strong>ski instructor</strong>, plus one season in Norway building <strong>mountain bike trails</strong>, so outdoors for me is a safe space. These days it's <strong>golf</strong>, <strong>mountain biking</strong>, the occasional gaming session, and a bit too much appreciation for beer and wine.</p>
+      <p class="backstory-label">About me</p>
+      <p class="backstory-text">5th-semester Software Development (SWU) student at ITU, originally from Nyk&oslash;bing Falster. Took a proper gap-years detour before uni: several seasons as a <strong>ski instructor</strong>, plus one season in Norway building <strong>mountain bike trails</strong>, so outdoors for me is a safe space. These days it's <strong>golf</strong>, <strong>mountain biking</strong>, the occasional gaming session, and a bit too much appreciation for beer and wine.</p>
+      <img class="backstory-gif" src="assets/victor-raccoon-party.gif" alt="Party raccoon GIF">
       <p class="backstory-text">Academic tutor for the new students this summer, and a buddy the year before. Both great experiences, and both years I kept getting asked the same question: why haven't you applied to ScrollBar yet? Turns out I was one of the only tutors who wasn't already on the team. So here we are.</p>
+      <img class="backstory-gif" src="assets/suspicious-monkey.gif" alt="Suspicious monkey GIF">
       <p class="backstory-text">Years of <strong>ski instructing, substitute teaching and bartending</strong> helped me work under pressure with a crowd depending on me, and tutoring new students helped me get good with people and make everyone feel welcome in a safe space.</p>
     </div>
   </section>
 
   <section class="cta">
-    <h2>So, ScrollBar, will you accept this application?</h2>
+    <h2>So, ScrollBar, will you accept this application? <span class="wavy-rainbow"><span class="wavy-letter" style="animation-delay:0.00s">P</span><span class="wavy-letter" style="animation-delay:0.07s">r</span><span class="wavy-letter" style="animation-delay:0.14s">e</span><span class="wavy-letter" style="animation-delay:0.21s">t</span><span class="wavy-letter" style="animation-delay:0.28s">t</span><span class="wavy-letter" style="animation-delay:0.35s">y</span><span class="wavy-letter" style="animation-delay:0.42s">&nbsp;</span><span class="wavy-letter" style="animation-delay:0.49s">p</span><span class="wavy-letter" style="animation-delay:0.56s">l</span><span class="wavy-letter" style="animation-delay:0.63s">e</span><span class="wavy-letter" style="animation-delay:0.70s">e</span><span class="wavy-letter" style="animation-delay:0.77s">e</span><span class="wavy-letter" style="animation-delay:0.84s">a</span><span class="wavy-letter" style="animation-delay:0.91s">s</span><span class="wavy-letter" style="animation-delay:0.98s">e</span><span class="wavy-letter" style="animation-delay:1.05s">&nbsp;</span><span class="wavy-letter" style="animation-delay:1.12s">:</span><span class="wavy-letter" style="animation-delay:1.19s">)</span></span></h2>
     <div class="cta-buttons" id="cta-buttons">
       <button class="btn btn-accept" id="accept-btn">ACCEPT</button>
       <button class="btn btn-decline" id="decline-btn">DECLINE</button>
@@ -114,12 +116,14 @@
   </section>
 
   <footer class="site-footer">
-    Built with organized chaos for ScrollBar @ ITU &middot; 2026
+    <p class="footer-contact">Victor Troelsen &middot; <a href="mailto:vitr@itu.dk">vitr@itu.dk</a></p>
+    <p>Built with organized chaos for ScrollBar @ ITU &middot; 2026</p>
   </footer>
 </main>
 
 <div class="overlay hidden" id="escalation-modal">
   <div class="modal-box">
+    <img class="modal-gif" src="assets/spiderman-sad.gif" alt="Sad reaction GIF">
     <p class="modal-text">Wait, are you sure?</p>
     <div class="modal-buttons">
       <button class="btn btn-outline btn-no">No</button>
@@ -130,12 +134,38 @@
 
 <div class="overlay hidden" id="celebration-overlay">
   <div class="modal-box celebration-box">
-    <p class="celebration-emoji">🎉</p>
+    <button class="modal-close" id="celebration-close" aria-label="Close">&times;</button>
+    <img class="modal-gif" src="assets/office-celebration.gif" alt="Celebration GIF">
     <p class="modal-text">COMMIT MERGED.<br>See you behind the bar, Friday 3PM&ndash;2AM.</p>
     <a class="btn btn-accept" href="mailto:victor.troelsen@gmail.com?subject=ScrollBar%20Tender%20Application">Email Victor &rarr;</a>
   </div>
 </div>
 
-<script src="script.js?v=25"></script>
+<button class="proscons-tab" id="proscons-tab" aria-expanded="false">Pros &amp; Cons</button>
+
+<aside class="proscons-panel" id="proscons-panel">
+  <button class="modal-close" id="proscons-close" aria-label="Close">&times;</button>
+  <p class="backstory-label">Pros &amp; cons, for transparency</p>
+  <div class="proscons-stack">
+    <div>
+      <p class="proscons-heading">Pros</p>
+      <ul class="proscons-list">
+        <li>Loves Fred again..</li>
+        <li>Being able to see over the bar</li>
+        <li>Knows where the garbage disposal is</li>
+      </ul>
+    </div>
+    <div>
+      <p class="proscons-heading">Cons</p>
+      <ul class="proscons-list">
+        <li>Me and tequila shots are a bad combination</li>
+        <li>Objectively terrible at pub quizzes</li>
+        <li>Doesn't like Rekom bars</li>
+      </ul>
+    </div>
+  </div>
+</aside>
+
+<script src="script.js?v=40"></script>
 </body>
 </html>
