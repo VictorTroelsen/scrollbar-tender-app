@@ -155,6 +155,39 @@ main {
   .stat-collage { grid-template-columns: 1fr; }
 }
 
+.backstory {
+  padding: 32px 0 0;
+}
+
+.backstory-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: 8px;
+  padding: 18px 22px;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.backstory-label {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.7rem;
+  color: var(--accent);
+  margin: 0 0 8px;
+}
+
+.backstory-text {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.backstory-text strong {
+  color: var(--text);
+}
+
 .experience {
   padding: 32px 0 0;
 }
