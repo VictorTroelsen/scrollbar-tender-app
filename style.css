@@ -132,6 +132,11 @@ main {
 
 .collage-emoji { font-size: 1.3rem; }
 
+.collage-emoji-icon {
+  flex-shrink: 0;
+  transform: translateY(2px);
+}
+
 .collage-value {
   font-size: 1.3rem;
   font-weight: 700;
@@ -184,39 +189,11 @@ main {
   margin: 0;
 }
 
+.backstory-text + .backstory-text {
+  margin-top: 14px;
+}
+
 .backstory-text strong {
-  color: var(--text);
-}
-
-.experience {
-  padding: 32px 0 0;
-}
-
-.experience-box {
-  background: var(--bg-card);
-  border-left: 3px solid var(--accent);
-  border-radius: 8px;
-  padding: 18px 22px;
-  max-width: 560px;
-  margin: 0 auto;
-}
-
-.experience-label {
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  font-size: 0.7rem;
-  color: var(--accent);
-  margin: 0 0 8px;
-}
-
-.experience-text {
-  color: var(--text-dim);
-  font-size: 1.4rem;
-  line-height: 1.65;
-  margin: 0;
-}
-
-.experience-text strong {
   color: var(--text);
 }
 
