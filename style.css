@@ -73,7 +73,7 @@ main {
   max-width: 600px;
   margin: 24px auto 0;
   color: var(--text-dim);
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   line-height: 1.6;
 }
 
@@ -179,7 +179,7 @@ main {
 
 .backstory-text {
   color: var(--text-dim);
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.6;
   margin: 0;
 }
@@ -211,7 +211,7 @@ main {
 
 .experience-text {
   color: var(--text-dim);
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.6;
   margin: 0;
 }

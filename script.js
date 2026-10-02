@@ -43,12 +43,18 @@ window.addEventListener('mousemove', (e) => {
   const maxX = window.innerWidth - rect.width - PADDING;
   const maxY = window.innerHeight - rect.height - PADDING;
 
-  btnX = Math.min(Math.max(btnX + Math.cos(angle) * step, PADDING), maxX);
-  btnY = Math.min(Math.max(btnY + Math.sin(angle) * step, PADDING), maxY);
+  btnX = bounce(btnX + Math.cos(angle) * step, PADDING, maxX);
+  btnY = bounce(btnY + Math.sin(angle) * step, PADDING, maxY);
 
   declineBtn.style.left = btnX + 'px';
   declineBtn.style.top = btnY + 'px';
 });
+
+function bounce(pos, min, max) {
+  if (pos < min) pos = min + (min - pos);
+  else if (pos > max) pos = max - (pos - max);
+  return Math.min(Math.max(pos, min), max);
+}
 
 const escalationSteps = [
   { text: 'Wait, are you sure you want to decline?', yes: 'Yes', no: 'No' },
